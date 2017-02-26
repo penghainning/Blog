@@ -1,0 +1,65 @@
+.footer p {
+  color: #7f8c8d;
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+  background: #2d3e50;
+}
+
+.topbar-link-btn {
+    color: #fff !important;
+}
+
+
+html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+header{
+  /* 我们希望 header 采用固定的高度，只占用必须的空间 */
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+
+#mainpage{
+  /* 将 flex-grow 设置为1，该元素会占用全部可使用空间
+     而其他元素该属性值为0，因此不会得到多余的空间*/
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 1 0 auto;
+
+}
+
+footer{
+  /* 和 header 一样，footer 也采用固定高度*/
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+
+@media only screen and (min-width: 641px) {
+  .blog-sidebar {
+    font-size: 1.4rem;
+  }
+}
+
+.blog-main {
+  padding: 20px 0;
+}
+
+.blog-title {
+  margin: 10px 0 20px 0;
+}
+
+.blog-meta {
+  font-size: 14px;
+  margin: 10px 0 20px 0;
+  color: #222;
+}
+
+.blog-meta a {
+  color: #27ae60;
+}
